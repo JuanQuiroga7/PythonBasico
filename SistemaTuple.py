@@ -15,11 +15,13 @@ Educacion = tuple ((educacion1, educacion2))
 experiencia_laboral = tuple((experiencia1, experiencia2))
 
 print()
+print()
 print("Informacion del usuario: ", "Nombre: ", informacion_usuario[0], "Edad: ", informacion_usuario[1], "años")
 print("el usuario resdide en: ", direccion )
 print("El usuario posee curso de programacion: ", Educacion[0])
 print("El usuario posee titulo ", Educacion[1])
 print("Experiencia laboral del usuario: ", experiencia_laboral)
 
+print()
 print()
 print("Muchas gracias por usas nuestros servicios")
