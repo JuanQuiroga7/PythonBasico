@@ -1,0 +1,25 @@
+name = input("Ingrese su nombre: ")
+edad = input("Ingrese su edad: ")
+direccion_input = input("Cual es su direccion de domicilio? ")
+ciudad = input("En que ciudad reside? ")
+Departamento = input("Ingrese el departamento? ")
+educacion1 = input("Tiene algun curso relacionado a programacion? (Responda Si/no) ")
+educacion2 = input("Cuenta con titulo? (Si/no) ") 
+experiencia1 = input("Escriba su primera experiencia laboral: (Si no tiene, escriba NA) ")
+experiencia2= input("Escriba su segunda experiencia laboral: (Si no tiene, escriba NA) ")
+
+
+informacion_usuario = tuple((name, edad))
+direccion = tuple ((direccion_input, ciudad, Departamento))
+Educacion = tuple ((educacion1, educacion2))
+experiencia_laboral = tuple((experiencia1, experiencia2))
+
+print()
+print("Informacion del usuario: ", "Nombre: ", informacion_usuario[0], "Edad: ", informacion_usuario[1], "años")
+print("el usuario resdide en: ", direccion )
+print("El usuario posee curso de programacion: ", Educacion[0])
+print("El usuario posee titulo ", Educacion[1])
+print("Experiencia laboral del usuario: ", experiencia_laboral)
+
+print()
+print("Muchas gracias por usas nuestros servicios")
