@@ -1,16 +1,12 @@
-def numero_mayor(num1, num2, num3):
-    if num1 >= num2 and num1 >= num3:
-        return num1
-    elif num2 >= num1 and num2 >= num3:
-        return num2
+def factorial (numero):
+    if numero == 0:
+        return 1
     else:
-        return num3
+        return numero * factorial(numero - 1)
 
-num1 = int(input("Profe, ingrese el primer numero: "))
-num2 = int(input("Profe, ingrese el segundo numero: "))
-num3 = int(input("Profe, ingrese el tercer numero: "))
+numero = int(input("Escribe el numero que usaremos: "))
+resultado = factorial (numero)
 
-resultado = numero_mayor(num1, num2, num3)
-print("El numero mayor es ", resultado)
+print("El numero factorial de ", numero, "es ", resultado)
 
 
