@@ -1,9 +1,14 @@
-num = float(input("Ingrese la temperatura a convertir: "))
+def par_impar(numero):
+    if numero % 2 == 0:
+        return "par"
+    else:
+        return "impar"
 
-conversion = (num * 1.8) + 32 
+numero = int(input("Ingresa el numero para verificar si es par o impar: "))
+resultado = par_impar(numero)
 
 print()
-print(num, "celsius ","son ",conversion,"Fahrenheit")
+print("El", numero, "es", resultado)           
 
 
 
