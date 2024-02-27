@@ -1,18 +1,8 @@
-def multiplicar(numero):
-    rango = [numero]
-    
-    for i in range(2, 11):
-        siguiente_numero = rango[-1] + numero
-        rango.append(siguiente_numero) 
-    return rango
+lista = [23, 34, 33, 15, 34, 34, 21, 12, 12, 86, 12, 43, 34, 54, 24, 55, 12, 42, 78]
 
-numero = int(input("Ingrese un numero para ver la tabla de multiplicar: "))
-rango = multiplicar(numero)
+promedio = sum(lista) / len(lista)
 
-print("Tabla de multiplicar de ",numero)
-for i, resultado in enumerate(rango, start=1):
-    print(numero, "x", i, "=", resultado)
-
+print("El promedio de los numeros de la lista es: ", promedio)
 
 
 
