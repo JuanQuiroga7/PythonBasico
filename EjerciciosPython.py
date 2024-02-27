@@ -1,9 +1,24 @@
-Base = float(input("Ingrese la medida de la base del triangulo: "))
-Altura = float(input("Ingrese la altura del triangulo: "))
+def fibonacci(numero):
+    fibonacci_serie = [0, 1]
 
-Area = Base * Altura / 2 
+    for i in range(2, numero):
+        siguiente_numero = fibonacci_serie[-1] + fibonacci_serie[-2]
+        fibonacci_serie.append(siguiente_numero)
+    
+    return fibonacci_serie
 
-print("El area de este triangulo es ", Area, "cm2")
+numero = int(input("Ingrese la cantidad veces que desea generar la serie Fibonacci: "))
+
+fibonacci_serie = fibonacci(numero)
+print()
+print("Se genero la serie Fibonacci ", numero," veces. ")
+print("El resultado es: ", fibonacci_serie)
+
+
+
+
+
+
 
 
 
