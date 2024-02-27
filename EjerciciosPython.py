@@ -1,10 +1,8 @@
-lista = [23, 34, 33, 15, 34, 34, 21, 12, 12, 86, 12, 43, 34, 54, 24, 55, 12, 42, 78]
+Radio = float(input("Ingrese el radio del circulo: "))
 
-promedio = int(sum(lista) / len(lista))
+Area = 3.14 * (Radio * Radio)
 
-print("Edad de todos los estudiantes: ", lista)
-print()
-print("La edad promedio de los estudiantes es : ",promedio, "años")
+print("El area del circulo es: ",Area,"cm2")
 
 
 
