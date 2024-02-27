@@ -1,14 +1,9 @@
-def par_impar(numero):
-    if numero % 2 == 0:
-        return "par"
-    else:
-        return "impar"
+Base = float(input("Ingrese la medida de la base del triangulo: "))
+Altura = float(input("Ingrese la altura del triangulo: "))
 
-numero = int(input("Ingresa el numero para verificar si es par o impar: "))
-resultado = par_impar(numero)
+Area = Base * Altura / 2 
 
-print()
-print("El", numero, "es", resultado)           
+print("El area de este triangulo es ", Area, "cm2")
 
 
 
