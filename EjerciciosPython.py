@@ -1,18 +1,20 @@
-def fibonacci(numero):
-    fibonacci_serie = [0, 1]
-
-    for i in range(2, numero):
-        siguiente_numero = fibonacci_serie[-1] + fibonacci_serie[-2]
-        fibonacci_serie.append(siguiente_numero)
+def multiplicar(numero):
+    rango = [numero]
     
-    return fibonacci_serie
+    for i in range(2, 11):
+        siguiente_numero = rango[-1] + numero
+        rango.append(siguiente_numero) 
+    return rango
 
-numero = int(input("Ingrese la cantidad veces que desea generar la serie Fibonacci: "))
+numero = int(input("Ingrese un numero para ver la tabla de multiplicar: "))
+rango = multiplicar(numero)
 
-fibonacci_serie = fibonacci(numero)
-print()
-print("Se genero la serie Fibonacci ", numero," veces. ")
-print("El resultado es: ", fibonacci_serie)
+print("Tabla de multiplicar de ",numero)
+for i, resultado in enumerate(rango, start=1):
+    print(numero, "x", i, "=", resultado)
+
+
+
 
 
 
