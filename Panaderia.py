@@ -56,7 +56,7 @@ for i,categoria in enumerate(productos_por_categoria):
     print(f" {i+1}. {categoria}")
 
 print()
-opcion_categoria = int(input("Segun la lista, escriba el numero que corresponde a la categoria: "))
+opcion_categoria = int(input("Segun la lista, escriba el numero que corresponde a la categoria que desea ver: "))
 
 categoria_seleccionada = list(productos_por_categoria.keys())[opcion_categoria - 1]
 productos_de_categoria_seleccionada = productos_por_categoria[categoria_seleccionada]
@@ -72,20 +72,21 @@ precio_producto_seleccionado = productos_de_categoria_seleccionada[producto_sele
 
 print(f"\nVa a realizar la compra de {producto_seleccionado} con un precio de ${precio_producto_seleccionado} pesos.")
 
-dinero= int(input(f"\nIngrese la cantida de dinero disponible: "))
+dinero= int(input(f"\nIngrese la cantidad de dinero disponible: "))
 vueltos = dinero - precio_producto_seleccionado
 
 if dinero >= precio_producto_seleccionado:
-    print(f"Usuario, usted selecciono el producto {producto_seleccionado} con un valor de ${precio_producto_seleccionado}, sus vueltos son ${vueltos}")
+    print(f"\nUsuario, usted selecciono el producto {producto_seleccionado} con un valor de ${precio_producto_seleccionado}, sus vueltos son ${vueltos}")
 else:
-    print(f"El producto que desea comprar {producto_seleccionado} con un valor de ${precio_producto_seleccionado}, supera el precio de su prespuesto en ${-vueltos}")
+    print(f"\nEl producto que desea comprar {producto_seleccionado} con un valor de ${precio_producto_seleccionado}, excede su prespuesto en ${-vueltos} \nVuelva pronto!! ")
+    exit()
 
-Confirmacion = input("Confirmar compra -- Escriba 1 para confirmar o 2 para cancelar proceso")
+Confirmacion = int(input(f"\nConfirmar compra -- Escriba 1 para confirmar o 2 para cancelar proceso: "))
 
 if Confirmacion == 1:
-    print("Muchas gracias por su compra, vuelva pronto a Juancho Pan :D")
+    print(f"\nMuchas gracias por su compra, vuelva pronto a Juancho Pan :D")
 else:
-    print("ERROR: Proceso cancelado, intentelo de nuevo mas tarde")
+    print(f"\nERROR: Proceso cancelado, intentelo de nuevo mas tarde")
 
 
     
