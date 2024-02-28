@@ -72,10 +72,20 @@ precio_producto_seleccionado = productos_de_categoria_seleccionada[producto_sele
 
 print(f"\nVa a realizar la compra de {producto_seleccionado} con un precio de ${precio_producto_seleccionado} pesos.")
 
-dinero= int(input("Ingrese la cantida de dinero disponible: "))
+dinero= int(input(f"\nIngrese la cantida de dinero disponible: "))
 vueltos = dinero - precio_producto_seleccionado
 
-if dinero >= precios[opcion]:
-    print(f"Usuario, usted selecciono el producto {productos[opcion]} con un valor de ${precios[opcion]}, sus vueltos son ${vueltos}")
+if dinero >= precio_producto_seleccionado:
+    print(f"Usuario, usted selecciono el producto {producto_seleccionado} con un valor de ${precio_producto_seleccionado}, sus vueltos son ${vueltos}")
 else:
-    print(f"El producto que desea comprar {productos[opcion]} con un valor de ${precios[opcion]}, supera el precio de su prespuesto en ${-vueltos}")
+    print(f"El producto que desea comprar {producto_seleccionado} con un valor de ${precio_producto_seleccionado}, supera el precio de su prespuesto en ${-vueltos}")
+
+Confirmacion = input("Confirmar compra -- Escriba 1 para confirmar o 2 para cancelar proceso")
+
+if Confirmacion == 1:
+    print("Muchas gracias por su compra, vuelva pronto a Juancho Pan :D")
+else:
+    print("ERROR: Proceso cancelado, intentelo de nuevo mas tarde")
+
+
+    
